@@ -1,4 +1,4 @@
-## Criando SQL Azure serverless no Azure gratuito
+## Criando SQL Azure serverless no Azure gratuito - Sem cartão de crédito
 #### Disclaimer: Utilizar somente para fins de estudo e testes da tecnologia
 
 **Prérequisitos:**
