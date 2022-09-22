@@ -33,7 +33,6 @@ resource "azurerm_mssql_database" "sql" {
   read_scale                  = false
   sku_name                    = "GP_S_Gen5_10"
   zone_redundant              = false
-
 }
 
 resource "azurerm_mssql_firewall_rule" "sql" {
