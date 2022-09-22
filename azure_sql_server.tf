@@ -36,7 +36,7 @@ resource "azurerm_mssql_database" "sql" {
 }
 
 resource "azurerm_mssql_firewall_rule" "sql" {
-  name             = "RegraInternetJorgeCasa"
+  name             = "LiberacaoIPInternetPessoal"
   server_id        = azurerm_mssql_server.sql.id
   start_ip_address = "191.187.88.83"
   end_ip_address   = "191.187.88.83"
