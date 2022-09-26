@@ -17,6 +17,8 @@ resource "azurerm_mssql_server" "sql" {
   location            = var.location
   version             = "12.0"
 
+  
+
   administrator_login          = var.usuario_admin
   administrator_login_password = var.password
 }
@@ -36,8 +38,8 @@ resource "azurerm_mssql_database" "sql" {
 }
 
 resource "azurerm_mssql_firewall_rule" "sql" {
-  name             = "LiberacaoIPInternetPessoal"
+  name             = "RegraFWInternet"
   server_id        = azurerm_mssql_server.sql.id
-  start_ip_address = "191.187.88.83"
-  end_ip_address   = "191.187.88.83"
+  start_ip_address = var.ip
+  end_ip_address   = var.ip
 }
