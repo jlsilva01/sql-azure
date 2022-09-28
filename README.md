@@ -3,17 +3,17 @@
 
 ### Pré-requisitos:
 
-[Azure CLI](https://learn.microsoft.com/pt-br/cli/azure/)
-[Visual Studio Code](https://code.visualstudio.com/download)
-[Terraform]([code.visualstudio.com/download](https://www.terraform.io/downloads))
-[SQL Server Management Studio](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
+[Azure CLI](https://learn.microsoft.com/pt-br/cli/azure/)<br />
+[Visual Studio Code](https://code.visualstudio.com/download)<br />
+[Terraform]([code.visualstudio.com/download](https://www.terraform.io/downloads))<br />
+[SQL Server Management Studio](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)<br />
 Conta _@outlook.com_ específica para esta atividade
 
 
 ### Roteiro:
 
-1. Ativar uma Sandbox MS Learn - Concierge Subscription (4 hora de duração)
-(https://learn.microsoft.com/pt-br/training/modules/create-serverless-logic-with-azure-functions/5-add-logic-to-the-function-app?pivots=powershell)
+1. Ativar uma Sandbox MS Learn - Concierge Subscription (4 hora de duração) - 
+[https://learn.microsoft.com/pt-br/training/modules/create-serverless-logic-with-azure-functions/5-add-logic-to-the-function-app?pivots=powershell](https://learn.microsoft.com/pt-br/training/modules/create-serverless-logic-with-azure-functions/5-add-logic-to-the-function-app?pivots=powershell)
 2. Ajustar o código Terraform (Resource group da sua Sandbox + Regra de FW com o IP de saída de sua internet).
 3. Logar no Azure através do Terminal do VScode via Azure CLI.
 4. Executar o código Terraform.
