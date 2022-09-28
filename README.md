@@ -1,7 +1,7 @@
 ## Criando SQL Azure serverless no Azure gratuito - Sem cartão de crédito
 #### Disclaimer: Utilizar somente para fins de estudo e testes da tecnologia
 
-**Prérequisitos:**
+####**Pré-requisitos:**
 
 Azure CLI
 ```(shell)
@@ -22,7 +22,7 @@ https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio
 Conta _@outlook.com_ específica para esta atividade
 
 
-**Roteiro:**
+####**Roteiro:**
 
 1. Ativar uma Sandbox MS Learn - Concierge Subscription (4 hora de duração)
 ```(shell)
