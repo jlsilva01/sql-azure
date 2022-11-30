@@ -19,3 +19,6 @@
 4. Executar o código Terraform.
 5. Logar no [portal.azure.com](https://portal.azure.com/) e conferir o deploy do SQL do Azure.
 6. Logar no SSMS e validar a conexão com o SQL a partir do seu computador.
+
+v2
+- Adicionado item para buscar o IP de saida de internet via codigo e adicionar regra no fw para liberação acesso.
