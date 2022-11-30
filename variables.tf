@@ -14,7 +14,3 @@ variable "usuario_admin" {
 variable "password" {
   default = "senha@2022"
 }
-
-variable "ip" {
-  default = "179.216.27.203"
-}

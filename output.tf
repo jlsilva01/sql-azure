@@ -14,3 +14,7 @@ output "username" {
 output "password" {
   value = var.password
 }
+
+output "ip" {
+  value = data.http.meuip.body
+}
