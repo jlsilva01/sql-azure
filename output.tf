@@ -1,10 +1,19 @@
 
-output "azurerm_mssql_server_name" {
+output "sqlserver_001" {
   value = azurerm_mssql_server.sql.name
 }
 
-output "azurerm_mssql_database_name" {
+output "sqlserver_002" {
+  value = azurerm_mssql_server.sql_002.name
+}
+
+
+output "database_001" {
   value = azurerm_mssql_database.sql.name
+}
+
+output "database_002" {
+  value = azurerm_mssql_database.sql_002.name
 }
 
 output "username" {

@@ -21,4 +21,4 @@
 6. Logar no SSMS e validar a conexão com o SQL a partir do seu computador.
 
 ### v2
-- Adicionado item para buscar o IP de saida de internet via codigo e adicionar regra no fw para liberação acesso.
+- Adicionado item para buscar o IP de saida de internet via codigo *https://api.ipify.org* e adicionar regra no fw para liberação acesso.

@@ -1,15 +1,15 @@
-resource "azurerm_mssql_server" "sql" {
-  name                         = "satc-sqlserver-001"
+resource "azurerm_mssql_server" "sql_002" {
+  name                         = "satc-sqlserver-002"
   resource_group_name          = var.resource_group_name
-  location                     = var.location
+  location                     = var.location_002
   version                      = "12.0"
   administrator_login          = var.usuario_admin
   administrator_login_password = var.password
 }
 
-resource "azurerm_mssql_database" "sql" {
+resource "azurerm_mssql_database" "sql_002" {
   name                        = "dados"
-  server_id                   = azurerm_mssql_server.sql.id
+  server_id                   = azurerm_mssql_server.sql_002.id
   collation                   = "SQL_Latin1_General_CP1_CI_AS"
   auto_pause_delay_in_minutes = -1
   max_size_gb                 = 64
@@ -22,7 +22,7 @@ resource "azurerm_mssql_database" "sql" {
 
 }
 
-data "http" "meuip" {
+data "http" "meuip_002" {
   url = "https://api.ipify.org"
 
   # Opcional: header da requisição
@@ -31,9 +31,9 @@ data "http" "meuip" {
   }
 }
 
-resource "azurerm_mssql_firewall_rule" "sql" {
+resource "azurerm_mssql_firewall_rule" "sql_002" {
   name             = "RegraFWInternet"
-  server_id        = azurerm_mssql_server.sql.id
-  start_ip_address = data.http.meuip.body
-  end_ip_address   = data.http.meuip.body
+  server_id        = azurerm_mssql_server.sql_002.id
+  start_ip_address = data.http.meuip_002.body
+  end_ip_address   = data.http.meuip_002.body
 }
