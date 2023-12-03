@@ -12,8 +12,8 @@
 
 ### Roteiro:
 
-1. Ativar uma Sandbox MS Learn - Concierge Subscription (4 hora de duração) - 
-[https://learn.microsoft.com/pt-br/training/modules/create-serverless-logic-with-azure-functions/5-add-logic-to-the-function-app?pivots=powershell](https://learn.microsoft.com/pt-br/training/modules/create-serverless-logic-with-azure-functions/5-add-logic-to-the-function-app?pivots=powershell)
+1. Ativar uma Sandbox MS Learn (Area Restrita) - Concierge Subscription (4 hora de duração) - 
+[https://learn.microsoft.com/pt-br/training/modules/build-serverless-api-with-functions-api-management/5-exercise-import-additional-functions-existing-api-gateway?ns-enrollment-type=learningpath&ns-enrollment-id=learn.create-serverless-applications](https://learn.microsoft.com/pt-br/training/modules/build-serverless-api-with-functions-api-management/5-exercise-import-additional-functions-existing-api-gateway?ns-enrollment-type=learningpath&ns-enrollment-id=learn.create-serverless-applications)
 2. Ajustar o código Terraform (Resource group da sua Sandbox + Regra de FW com o IP de saída de sua internet).
 3. Logar no Azure através do Terminal do VScode via Azure CLI.
 4. Executar o código Terraform.
