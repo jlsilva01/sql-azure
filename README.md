@@ -5,7 +5,7 @@
 
 - [Azure CLI](https://learn.microsoft.com/pt-br/cli/azure/)
 - [Visual Studio Code](https://code.visualstudio.com/download)
-- [Terraform]([https://www.terraform.io/downloads](https://www.terraform.io/downloads))
+- [Terraform](https://www.terraform.io/downloads)
 - [SQL Server Management Studio - SSMS](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
 - Conta _@outlook.com_ específica para esta atividade
 
@@ -16,44 +16,44 @@
 [https://learn.microsoft.com/pt-br/training/modules/build-serverless-api-with-functions-api-management/5-exercise-import-additional-functions-existing-api-gateway?ns-enrollment-type=learningpath&ns-enrollment-id=learn.create-serverless-applications](https://learn.microsoft.com/pt-br/training/modules/build-serverless-api-with-functions-api-management/5-exercise-import-additional-functions-existing-api-gateway?ns-enrollment-type=learningpath&ns-enrollment-id=learn.create-serverless-applications)
 2. Efetuar o login no Azure através do Azure CLI (caso não tenh o azure cli instalado ainda, utilize este [link](https://learn.microsoft.com/pt-br/cli/azure/install-azure-cli) para instalação).
 ```bash  copy
-$ az login
+az login
 ```
 3. Conferir sua assinatura atual.
 ```bash copy
-$ az account show -o table
+az account show -o table
 ```
 4. Listar todas as assinaturas do Azure da sua conta Microsoft, utilize o comando abaixo (troque o e-mail abaixo pelo e-mail da sua conta Azure).
 ```bash  copy
-$ az account list --query "[?user.name=='jlsilva01@yahoo.com.br'].{Name:name, ID:id, Default:isDefault}" --o table
+az account list --query "[?user.name=='jlsilva01@yahoo.com.br'].{Name:name, ID:id, Default:isDefault}" --o table
 ```
 5. Utilizar a assinatura gratuita, ativada no item 1 deste.
 ```bash  copy
-$ az account set --subscription "Concierge Subscription
+az account set --subscription "Concierge Subscription
 ```
 6. Consultar o nome do Resource Group criado para a sua conta do Concierge Subscription.
 ```bash copy
-$ az group list -o table
+az group list -o table
 ```
 7. Ajustar a variável *resource_group_name* do arquivo `variables.tf` com o nome do Resource Group informado no passo anterior.
 8. Criar os recursos na assinatura Azure selecionada.
 ```bash copy
-$ terraform init
+terraform init
 ```
 ```bash copy
-$ terraform validate
+terraform validate
 ```
 ```bash copy
-$ terraform fmt
+terraform fmt
 ```
 ```bash copy
-$ terraform plan
+terraform plan
 ```
 ```bash copy
-$ terraform apply
+terraform apply
 ```
 9. Logar no [portal.azure.com](https://portal.azure.com/) e conferir o deploy do SQL do Azure.
 10. Abrir o SSMS e logar no SQL do Azure a partir do seu computador.
 11. Destruir os recursos criados.
 ```bash copy
-$ terraform destroy
+terraform destroy
 ```
