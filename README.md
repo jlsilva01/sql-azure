@@ -24,17 +24,23 @@ az account show -o table
 ```
 4. Listar todas as assinaturas do Azure da sua conta Microsoft, utilize o comando abaixo (troque o e-mail abaixo pelo e-mail da sua conta Azure).
 ```bash  copy
-az account list --query "[?user.name=='jlsilva01@yahoo.com.br'].{Name:name, ID:id, Default:isDefault}" --o table
+az account list --query "[?user.name=='jlsilva01@yahoo.com.br'].{Name:name, ID:id, Default:isDefault}" -o table
 ```
 5. Utilizar a assinatura gratuita, ativada no item 1 deste.
 ```bash  copy
-az account set --subscription "Concierge Subscription
+az account set --subscription "Concierge Subscription"
 ```
 6. Consultar o nome do Resource Group criado para a sua conta do Concierge Subscription.
 ```bash copy
 az group list -o table
 ```
 7. Ajustar a variável *resource_group_name* do arquivo `variables.tf` com o nome do Resource Group informado no passo anterior.
+```terraform
+variable "resource_group_name" {
+  default = "learn-877e311a-66ab-401b-9372-06326c9bd083"
+}
+```
+
 8. Criar os recursos na assinatura Azure selecionada.
 ```bash copy
 terraform init
