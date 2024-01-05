@@ -22,18 +22,12 @@ resource "azurerm_mssql_database" "sql" {
 
 }
 
-data "http" "meuip" {
-  url = "https://api.ipify.org"
+data "ipify_ip" "public" {}
 
-  # Opcional: header da requisição
-  request_headers = {
-    Accept = "application/text"
-  }
-}
 
 resource "azurerm_mssql_firewall_rule" "sql" {
   name             = "RegraFWInternet"
   server_id        = azurerm_mssql_server.sql.id
-  start_ip_address = data.http.meuip.body
-  end_ip_address   = data.http.meuip.body
+  start_ip_address = data.ipify_ip.public.ip
+  end_ip_address   = data.ipify_ip.public.ip
 }

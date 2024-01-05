@@ -1,29 +1,33 @@
-
 output "sqlserver_001" {
-  value = azurerm_mssql_server.sql.name
+  description = "Nome do SQL Server"
+  value       = azurerm_mssql_server.sql.name
 }
 
-output "sqlserver_002" {
-  value = azurerm_mssql_server.sql_002.name
-}
+# output "sqlserver_002" {
+#   value = azurerm_mssql_server.sql_002.name
+# }
 
 
 output "database_001" {
-  value = azurerm_mssql_database.sql.name
+  description = "Nome do Banco de Dados"
+  value       = azurerm_mssql_database.sql.name
 }
 
-output "database_002" {
-  value = azurerm_mssql_database.sql_002.name
-}
+# output "database_002" {
+#   value = azurerm_mssql_database.sql_002.name
+# }
 
 output "username" {
-  value = var.usuario_admin
+  description = "Usuário SQL Server"
+  value       = var.usuario_admin
 }
 
 output "password" {
-  value = var.password
+  description = "Senha SQL Server"
+  value       = var.password
 }
 
-output "ip" {
-  value = data.http.meuip.body
+output "public_ip" {
+  description = "Meu IP Público"
+  value       = data.ipify_ip.public.ip_cidr
 }
