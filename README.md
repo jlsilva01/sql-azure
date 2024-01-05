@@ -5,7 +5,7 @@
 
 - [Azure CLI](https://learn.microsoft.com/pt-br/cli/azure/)
 - [Visual Studio Code](https://code.visualstudio.com/download)
-- [Terraform]([https://www.terraform.io/downloads](https://www.terraform.io/downloads))
+- [Terraform](https://www.terraform.io/downloads)
 - [SQL Server Management Studio - SSMS](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
 - Conta _@outlook.com_ específica para esta atividade
 
