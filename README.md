@@ -14,7 +14,7 @@
 
 1. Ativar uma Sandbox MS Learn (Area Restrita) - Concierge Subscription (4 hora de duração) - 
 [https://learn.microsoft.com/pt-br/training/modules/build-serverless-api-with-functions-api-management/5-exercise-import-additional-functions-existing-api-gateway?ns-enrollment-type=learningpath&ns-enrollment-id=learn.create-serverless-applications](https://learn.microsoft.com/pt-br/training/modules/build-serverless-api-with-functions-api-management/5-exercise-import-additional-functions-existing-api-gateway?ns-enrollment-type=learningpath&ns-enrollment-id=learn.create-serverless-applications)
-2. Efetuar o login no Azure através do Azure CLI (caso não tenh o azure cli instalado ainda, utilize este [link](https://learn.microsoft.com/pt-br/cli/azure/install-azure-cli) para instalação).
+2. Efetuar o login no Azure através do Azure CLI.
 ```bash  copy
 az login
 ```
